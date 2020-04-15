@@ -1,2 +1,1 @@
-# coursera-fundamentals-of-computing-work
- Course work for Fundamentals of Computing specialization
+Course work from Coursera [Fundamentals of Computing Specialization](https://www.coursera.org/specializations/computer-fundamentals)
