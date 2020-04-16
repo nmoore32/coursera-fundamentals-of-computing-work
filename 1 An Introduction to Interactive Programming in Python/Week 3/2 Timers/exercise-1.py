@@ -23,4 +23,4 @@ class Timer():
         self.root.after(1000, self.tick)
 
 
-Timer()
+t1, t2 = Timer(), Timer()
