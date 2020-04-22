@@ -9,7 +9,7 @@ MUST go in the storehouse as a result of following this placement method.
 
 Click on a house to move the seeds for that house.
 """
-from random import randint
+from random import choice, randint
 import sys
 
 import pygame as pg
@@ -107,10 +107,9 @@ class SolitaireMancala:
             # Generate a random configuration with enough seeds to be non-trivial
             # For a move from a given house to be legal the number of seeds on
             # that house must be equal to its number, hence the upper limits
-            # on the randint functions
             while sum(config) < 5:
                 config = [0, randint(0, 1), randint(0, 2),
-                          randint(0, 3), randint(0, 4), randint(0, 5), randint(0, 6)]
+                          randint(0, 3), choice([0, 2, 3, 4]), choice([0, 4, 5]), choice([0, 6])]
             self.set_board(config)
             # Check to see if the selected configuration is winnable
             next_move = self.choose_move()
