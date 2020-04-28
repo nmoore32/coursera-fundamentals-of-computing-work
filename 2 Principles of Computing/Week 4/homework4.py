@@ -216,6 +216,37 @@ def question9():
     # straightforward given the starting hint to find a formula using m, n, and factorials
 
 
+def question10():
+    """
+    Test cases to use for checking SolitaireMancala
+    """
+    TEST_CASES = [[0, 0, 0, 0, 0, 0, 0],
+                  [0, 1, 2, 3, 4, 5, 6],
+                  [0, 0, 1, 2, 3, 4, 5],
+                  [0, 3, 3, 3],
+                  [0, 6, 6, 6, 6, 5, 6]]
+
+    # Empty board
+
+    # Legal move in every position
+
+    # Illegal move in every position
+
+    # Short board with only legal move at last position
+
+    # Board with illegal moves but whose values coorespond
+    # to legal moves for other houses
+
+    # Appropriate response to empty board
+
+    # Correctly select correct legal move
+
+    # Correctly response to board with no legal moves
+
+    # Boundary check - only legal move in last position of short
+    # board
+
+
 print(f"Question 1: {len(question1())}")
 print(f"Question 2: {question2()}")
 print(f"Question 3: {question3()}")
